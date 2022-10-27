@@ -7,8 +7,8 @@
 // @match        https://www.snay.io/
 // @require https://code.jquery.com/jquery-3.6.0.min.js
 // @grant        none
-// @updateURL    https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript
-// @downloadURL  https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript
+// @updateURL    https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript.js
+// @downloadURL  https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript.js
 // ==/UserScript==
 
 
