@@ -23,8 +23,8 @@ const node = document.createElement("p");
 //var numBots = checkBots();
 const textnode = document.createTextNode("Shazam's snay.io script.   ");
 const menuTitle = document.querySelector("#title");
-//menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
-menuTitle.src = "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP.jpg";
+menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
+
 menuTitle.style.position = "absolute";
 menuTitle.style.top = "-5%";
 
