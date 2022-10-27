@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shazam's Snay.io script
 // @namespace    https://www.snay.io/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.snay.io/
@@ -23,8 +23,8 @@ const node = document.createElement("p");
 //var numBots = checkBots();
 const textnode = document.createTextNode("Shazam's snay.io script.   ");
 const menuTitle = document.querySelector("#title");
-menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
-
+//menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
+menuTitle.src = "https://yt3.ggpht.com/TNVorEJ9iTsESmUbcZXizwaZgy5jB-Ihx3z9qxfuuatrFRDhJHotz5x_X7mGIu38VBsr5bvlkg=s176-c-k-c0x00ffffff-no-rj";
 menuTitle.style.position = "absolute";
 menuTitle.style.top = "-5%";
 
