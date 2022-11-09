@@ -24,7 +24,6 @@ const node = document.createElement("p");
 const textnode = document.createTextNode("Shazam's snay.io script.   ");
 const menuTitle = document.querySelector("#title");
 menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
-
 menuTitle.style.position = "absolute";
 menuTitle.style.top = "-5%";
 
@@ -220,6 +219,27 @@ node.classList.add("NewHud");
 botControls.appendChild(botBtn);
 botControls.appendChild(stopbotBtn);
 //document.createElement("input", "checkbox")
+function moveBot() {
+
+    var e = $.Event('mousemove');
+    var a = $.Event('playing');
+    var f = $.Event('pointermove');
+
+
+// set coordinates
+    f.clientX = Math.random();
+    f.clientY = Math.random();
+    f.bubbles = true;
+    e.bubbles = true;
+    e.pageX = document.querySelector(".minimap-node").cx.animVal.value;
+    e.pageY = document.querySelector(".minimap-node").cy.animVal.value;
+
+// trigger event - must trigger on document
+    $("#root").trigger(e);
+    $("#root").trigger(a);
+    $("#root").trigger(f);
+
+}
 function botFeed() {
 
 }
@@ -326,23 +346,7 @@ function moveBottt(which){
     }
 }
 
-function moveBot(x, y) {
 
-    var e = $.Event('mousemove');
-
-
-
-// set coordinates
-
-    e.pageX = 300;
-    e.pageY = 300;
-
-// trigger event - must trigger on document
-    $("#root").trigger(e);
-
-
-
-}
 
 
 function resetSpawn(){
@@ -356,6 +360,7 @@ function resetSpawn(){
 
 
      setInterval(function(){
+
          signOut();
          SplitStart();
      }, 300);
@@ -379,6 +384,7 @@ function resetSpawn(){
 
 
         }, 1000);
+
         //window.cells.byId ---> and open the options and it will say the coordinates of the player
         // cells.list[0] ---> a big list of all the cells. Do a for loop and do cells.list[i].player
                 // and if it is a player, then put it somewhere to check which one is me.
@@ -399,32 +405,68 @@ function resetSpawn(){
    }, 1500);
   }
 
+function updateSkins(){
 
+    var freeTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+var halloweenTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+var ytbersTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+var flagSkins = []; var freeSkins = []; var halloweenSkins = []; var ytberSkins = []; openSkinsList(); document.querySelector("#gallery-body").style.transform = "scale(0.02)"; document.querySelector("#gallery-body").style.height = "100%"; freeTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+halloweenTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+ytbersTitle = document.querySelector("label").nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling; setTimeout(function(){flagSkins = document.querySelectorAll("img.circular"); freeTitle.click()}, 1000); setTimeout(function(){freeSkins = document.querySelectorAll("img.circular"); halloweenTitle.click()}, 2000); setTimeout(function(){halloweenSkins = document.querySelectorAll("img.circular"); ytbersTitle.click()}, 3000);/*yeet = document.querySelectorAll("img.circular");*/setTimeout(function(){ytberSkins = document.querySelectorAll("img.circular"); document.querySelector("#gallery-body").style.transform = "scale(1)"; document.querySelector("#gallery-body").style.height = ""; document.querySelector(".windowclosebtn").click()}, 4500);
+}
 
 
 function SkinChange() {
-  var rndInt = randomIntFromInterval(2, 235);
-  changeSkin("(" + rndInt + ")");
+//  var rndInt = randomIntFromInterval(2, 235);
+    var allSkinList = ["yt", "za", "zm", "zw", "(10)", "(100)", "(103)", "(104)", "(105)", "(106)", "(107)", "(108)", "(109)", "(11)", "(110)", "(111)", "(112)", "(113)", "(114)", "(115)", "(116)", "(117)", "(118)", "(119)", "(12)", "(120)", "(121)", "(122)", "(123)", "(124)", "(125)", "(126)", "(127)", "(128)", "(129)", "(13)", "(130)", "(131)", "(132)", "(133)", "(134)", "(135)", "(136)", "(137)", "(138)", "(139)", "(14)", "(140)", "(141)", "(142)", "(143)", "(144)", "(145)", "(146)", "(147)", "(148)", "(149)", "(15)", "(150)", "(151)", "(152)", "(153)", "(154)", "(155)", "(156)", "(157)", "(158)", "(159)", "(16)", "(160)", "(161)", "(162)", "(163)", "(164)", "(165)", "(166)", "(167)", "(168)", "(169)", "(17)", "(170)", "(171)", "(172)", "(173)", "(174)", "(175)", "(176)", "(177)", "(178)", "(179)", "(18)", "(180)", "(181)", "(183)", "(184)", "(185)", "(186)", "(187)", "(188)", "(189)", "(19)", "(190)", "(191)", "(192)", "(193)", "(194)", "(195)", "(196)", "(197)", "(198)", "(199)", "(2)", "(20)", "(200)", "(201)", "(202)", "(203)", "(204)", "(205)", "(206)", "(207)", "(208)", "(209)", "(21)", "(210)", "(211)", "(212)", "(214)", "(215)", "(216)", "(217)", "(218)", "(219)", "(22)", "(220)", "(221)", "(222)", "(223)", "(224)", "(225)", "(226)", "(227)", "(228)", "(229)", "(23)", "(230)", "(231)", "(232)", "(233)", "(234)", "(235)", "(24)", "(25)", "(26)", "(27)", "(28)", "(29)", "(3)", "(30)", "(31)", "(32)", "(33)", "(34)", "(35)", "(36)", "(37)", "(38)", "(39)", "(40)", "(41)", "(42)", "(43)", "(44)", "(45)", "(46)", "(47)", "(48)", "(49)", "(5)", "(50)", "(51)", "(52)", "(53)", "(54)", "(55)", "(56)", "(57)", "(58)", "(59)", "(6)", "(60)", "(61)", "(62)", "(63)", "(64)", "(65)", "(66)", "(67)", "(68)", "(69)", "(7)", "(70)", "(71)", "(72)", "(73)", "(74)", "(75)", "(76)", "(77)", "(78)", "(79)", "(8)", "(80)", "(81)", "(82)", "(83)", "(84)", "(85)", "(86)", "(87)", "(88)", "(89)", "(9)", "(90)", "(92)", "(93)", "(94)", "(95)", "(96)", "(97)", "(98)", "(99)", "anime (1)", "anime (10)", "anime (11)", "anime (12)", "anime (13)", "anime (14)", "anime (15)", "anime (16)", "anime (17)", "anime (18)", "anime (19)", "anime (2)", "anime (20)", "anime (21)", "anime (22)", "anime (23)", "anime (24)", "anime (25)", "anime (26)", "anime (27)", "anime (28)", "anime (29)", "anime (3)", "anime (30)", "anime (31)", "anime (32)", "anime (33)", "anime (34)", "anime (35)", "anime (36)", "anime (37)", "anime (38)", "anime (39)", "anime (4)", "anime (40)", "anime (41)", "anime (42)", "anime (43)", "anime (44)", "anime (45)", "anime (46)", "anime (47)", "anime (48)", "anime (49)", "anime (5)", "anime (50)", "anime (51)", "anime (52)", "anime (53)", "anime (54)", "anime (55)", "anime (56)", "anime (57)", "anime (58)", "anime (59)", "anime (6)", "anime (60)", "anime (61)", "anime (7)", "anime (8)", "anime (9)", "hwk(1)", "hwk(10)", "hwk(11)", "hwk(12)", "hwk(13)", "hwk(14)", "hwk(15)", "hwk(16)", "hwk(17)", "hwk(18)", "hwk(19)", "hwk(2)", "hwk(20)", "hwk(21)", "hwk(22)", "hwk(23)", "hwk(24)", "hwk(25)", "hwk(26)", "hwk(3)", "hwk(4)", "hwk(5)", "hwk(6)", "hwk(7)", "hwk(8)", "hwk(9)", "1667083115975", "1667083133355", "1667083151115", "1667083177297", "1667083219340", "1667083258153", "1667083283026", "1667083312011", "1667083362728", "1667083380895", "1667083438058", "1667083459417", "1667083490052", "63467523455676", "YT(1)", "YT(10)", "YT(11)", "YT(12)", "YT(13)", "YT(14)", "YT(15)", "YT(16)", "YT(17)", "YT(18)", "YT(19)", "YT(2)", "YT(20)", "YT(21)", "YT(22)", "YT(23)", "YT(24)", "YT(25)", "YT(26)", "YT(27)", "YT(28)", "YT(29)", "YT(3)", "YT(30)", "YT(31)", "YT(32)", "YT(33)", "YT(34)", "YT(35)", "YT(36)", "YT(37)", "YT(38)", "YT(39)", "YT(4)", "YT(40)", "YT(41)", "YT(42)", "YT(43)", "YT(44)", "YT(45)", "YT(46)", "YT(47)", "YT(48)", "YT(49)", "YT(5)", "YT(50)", "YT(51)", "YT(52)", "YT(53)", "YT(54)", "YT(55)", "YT(56)", "YT(57)", "YT(58)", "YT(59)", "YT(6)", "YT(60)", "YT(7)", "YT(8)", "YT(9)"]
+    var newSkinlist = ["1667083115975", "1667083133355", "1667083151115", "1667083177297", "1667083219340", "1667083258153", "1667083283026", "1667083312011", "1667083362728", "1667083380895", "1667083438058", "1667083459417", "1667083490052"]
+      var rndInt = randomIntFromInterval(0, allSkinList.length-1);
+  //changeSkin("(" + rndInt + ")");
+    changeSkin(allSkinList[rndInt]);
 }
 
 
 
-function placeEmojis(ex, wy) {
+//function placeEmojis(ex, wy) {
+  //  onmousemove = function(e){
+
+
+    //     document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.top = e.clientY-ex + "px";
+      //   document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.left = e.clientX-wy + "px";
+
+        //}
+
+      //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
+      //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.transform = "scale(50%)";
+     //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.opacity = "50%";
+      
+
+
+
+//}
+
+function placeEmojis(mx, my) {
+    onmousemove = function(e){
+
+        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
+        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.top = e.clientY-mx + "px";
+        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.left = e.clientX-my + "px";
+
+        }
 
       document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
       document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.transform = "scale(50%)";
      document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.opacity = "50%";
-      onmousemove = function(e){
 
-
-         document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.top = e.clientY-ex + "px";
-         document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.left = e.clientX-wy + "px";
-
-        }
 
 
 
 }
+
 
 //function placeBots(){
 //    setInterval(function() {
@@ -450,6 +492,16 @@ function placeEmojis(ex, wy) {
 
 //     }, 1200);
 //}
+function gibble(event){
+     if (event){
+         document.getElementById("emojiBtn").click();
+         document.removeEventListener('click', gibble);
+                     }
+}
+function bruhbruh(){
+    document.addEventListener('click', gibble);
+
+}
 
 function respawn() {
     if (window.settings.gamemode == "Dual[NoLogin]"){
@@ -462,7 +514,7 @@ function respawn() {
 }
 
 
-    function loading(){
+  function loading(){
 
 
 
@@ -473,6 +525,7 @@ function respawn() {
            document.querySelector(".swal-modal").style.display = "none";
            document.getElementsByClassName("swal-overlay")[0].style.display = "none";
           document.querySelector("#play-btn").click();
+             var emotes = document.querySelectorAll(".card");
 
             }
             if (event.keyCode == 116) {
@@ -485,22 +538,36 @@ function respawn() {
 
 
              if (event.keyCode == 49) { // number 1
-                placeEmojis(80, 495);
-                document.getElementById("emojiBtn").click();
+                 document.querySelectorAll(".card")[0].firstChild.click();
+               // placeEmojis(80, 495);
+                //document.getElementById("emojiBtn").click();
+                 //emotes[0].firstChild.click();
+                 //document.getElementById("emojiBtn").click();
+
+                               //  bruhbruh();
 
 
             }
             if (event.keyCode == 50) { // number 2
-                placeEmojis(80, 600);
-                document.getElementById("emojiBtn").click();
+                                 document.querySelectorAll(".card")[1].firstChild.click();
+                //placeEmojis(80, 600);
+                //document.getElementById("emojiBtn").click();
+                              //  bruhbruh();
             }
             if (event.keyCode == 99) { // letter c
-                placeEmojis(80, 665);
-                document.getElementById("emojiBtn").click();
+               // placeEmojis(80, 665);
+                //document.getElementById("emojiBtn").click();
+                  //              bruhbruh();
+                                 document.querySelectorAll(".card")[2].firstChild.click();
             }
             if (event.keyCode == 118) { // letter v
-              placeEmojis(80, 745);
-                document.getElementById("emojiBtn").click();
+              //placeEmojis(80, 745);
+                //document.getElementById("emojiBtn").click();
+               // bruhbruh();
+                                 document.querySelectorAll(".card")[3].firstChild.click();
+            }
+            if (event.keyCode == 118) {
+                document.querySelectorAll(".card")[4].firstChild.click();
             }
 
         });
@@ -511,6 +578,8 @@ function respawn() {
 
 
     }
+
+
 
 
 setInterval(function () {
@@ -524,7 +593,7 @@ setInterval(function () {
         // cells.list[0] ---> a big list of all the cells. Do a for loop and do cells.list[i].player
                 // and if it is a player, then put it somewhere to check which one is me.
 
-  //loading();
+  loading();
 
 //   placeBots();
 
