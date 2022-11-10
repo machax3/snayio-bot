@@ -566,8 +566,24 @@ function respawn() {
                // bruhbruh();
                                  document.querySelectorAll(".card")[3].firstChild.click();
             }
-            if (event.keyCode == 118) {
+            if (event.keyCode == 97) {
                 document.querySelectorAll(".card")[4].firstChild.click();
+            }
+            if (event.keyCode == 115) {
+                document.querySelectorAll(".card")[5].firstChild.click();
+            }
+            if (event.keyCode == 100){
+                    document.querySelectorAll(".card")[6].firstChild.click();
+            }
+            if(event.keyCode == 112) {
+                    document.querySelectorAll(".card")[7].firstChild.click();
+            }
+
+            if(event.keyCode == 122) {
+                    document.querySelectorAll(".card")[9].firstChild.click();
+            }
+            if(event.keyCode == 120) {
+                    document.querySelectorAll(".card")[7].firstChild.click();
             }
 
         });
