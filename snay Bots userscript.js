@@ -519,18 +519,17 @@ function respawn() {
 
 
         document.addEventListener("keypress",function(event){
+
          if (event.keyCode == 52) {
            document.getElementById("leaveBtn").click();
            document.querySelector(".swal-button--confirm").click();
            document.querySelector(".swal-modal").style.display = "none";
            document.getElementsByClassName("swal-overlay")[0].style.display = "none";
           document.querySelector("#play-btn").click();
-             var emotes = document.querySelectorAll(".card");
+
 
             }
-            if (event.keyCode == 116) {
-                //startDual();
-            }
+
             if (event.keyCode == 103) { // 'g'
               botSplit();
 
@@ -566,25 +565,59 @@ function respawn() {
                // bruhbruh();
                                  document.querySelectorAll(".card")[3].firstChild.click();
             }
-            if (event.keyCode == 97) {
+            if (event.keyCode == 97) { // letter a
                 document.querySelectorAll(".card")[4].firstChild.click();
             }
-            if (event.keyCode == 115) {
+            if (event.keyCode == 115) { // letter s
                 document.querySelectorAll(".card")[5].firstChild.click();
             }
-            if (event.keyCode == 100){
+            if (event.keyCode == 100){ // letter d
                     document.querySelectorAll(".card")[6].firstChild.click();
             }
-            if(event.keyCode == 112) {
-                    document.querySelectorAll(".card")[7].firstChild.click();
-            }
+          
 
-            if(event.keyCode == 122) {
+            if(event.keyCode == 122) { // letter z
                     document.querySelectorAll(".card")[9].firstChild.click();
             }
-            if(event.keyCode == 120) {
+            if(event.keyCode == 120) { // letter x
                     document.querySelectorAll(".card")[7].firstChild.click();
             }
+            if (event.keyCode == 33) { // shift + 1 (!)
+                document.querySelectorAll(".card")[8].firstChild.click();
+
+             }
+             if (event.keyCode == 64) { // shift + 2 (@)
+                document.querySelectorAll(".card")[10].firstChild.click();
+
+             }
+             if (event.keyCode == 65) { // shift + a (A)
+                document.querySelectorAll(".card")[11].firstChild.click();
+
+             }
+             if (event.keyCode == 83) { // shift + s (S)
+                document.querySelectorAll(".card")[12].firstChild.click();
+
+             }
+             if (event.keyCode == 68) { // shift + d (D)
+                document.querySelectorAll(".card")[13].firstChild.click();
+
+             }
+            if (event.keyCode == 90) { // shift + z (Z)
+                document.querySelectorAll(".card")[14].firstChild.click();
+
+             }
+            if (event.keyCode == 88) { // shift + x (X)
+                document.querySelectorAll(".card")[15].firstChild.click();
+
+             }
+            if (event.keyCode == 67) { // shift + c (C)
+                document.querySelectorAll(".card")[16].firstChild.click();
+
+             }
+            if (event.keyCode == 86) { // shift + v (V)
+                document.querySelectorAll(".card")[17].firstChild.click();
+
+             }
 
         });
 
