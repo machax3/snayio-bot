@@ -1,5 +1,5 @@
 # Installation: 
-just click this (link)[	https://github.com/ShazamHax/Snay-bots/raw/main/snay%20Bots%20userscript.user.js] and then click install or reinstall to update.
+just click this [	https://github.com/ShazamHax/Snay-bots/raw/main/snay%20Bots%20userscript.user.js](link) and then click install or reinstall to update.
 
 # Snay-bots
 Tryna make some snay bots fr.
