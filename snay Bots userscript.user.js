@@ -17,6 +17,7 @@
     // Warning! if player = false, the window will reload continuously.
    
 var isbot = false;
+document.querySelector("#game-over").remove();
 window.isbot = isbot;
 const logo = document.createElement("img");
 const node = document.createElement("p");
@@ -26,6 +27,41 @@ const menuTitle = document.querySelector("#title");
 menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
 menuTitle.style.position = "absolute";
 menuTitle.style.top = "-5%";
+
+var emojiBindingsButton = document.createElement("button");
+emojiBindingsButton.setAttribute("id", "emojiBindings");
+emojiBindingsButton.setAttribute("class", "on");
+document.querySelector("#modmenu").append(emojiBindingsButton);
+var emojiBindsOn;
+var emojiBindingsOutput = document.createElement("output");
+emojiBindingsOutput.setAttribute("id", "emojiBindingsValue");
+emojiBindingsButton.append(emojiBindingsOutput);
+var emojiValueOn = document.createTextNode("Emoji Keybinds: On");
+var emojiValueOff = document.createTextNode("Emoji Keybinds: Off");
+emojiBindingsOutput.append(emojiValueOn);
+emojiBindingsButton.style.background = "#32CD32";
+emojiBindingsButton.style.borderRadius = "25px";
+emojiBindingsButton.style.padding = "10px";
+emojiBindingsButton.style.transition = "all 1s ease";
+emojiBindingsOutput.style.transition = "all 2s ease";
+
+setInterval(function(){ if (document.querySelector("button#emojiBindings.on")){document.querySelector("button#emojiBindings.on").onclick = function(){emojiBindingsOutput.firstChild.remove(); emojiBindingsOutput.append(emojiValueOff); emojiBindingsButton.style.background = "gray"; emojiBindingsButton.removeAttribute("class"); emojiBindingsOutput.style.color = "white"; emojiBindingsButton.setAttribute("class", "off"); };}}, 1000);
+
+setInterval(function(){if(document.querySelector("button#emojiBindings.off")){document.querySelector("button#emojiBindings.off").onclick = function(){emojiBindingsOutput.firstChild.remove();
+        emojiBindingsOutput.append(emojiValueOn);
+        emojiBindingsButton.style.background = "#32CD32";
+        emojiBindingsButton.removeAttribute("class");
+        emojiBindingsOutput.style.color = "black";
+emojiBindingsButton.setAttribute("class", "on");};}}, 1000);
+
+
+
+
+
+
+
+
+
 
 setTimeout(function() {
     const meny = document.querySelector("#overlays.fade-in");
@@ -521,11 +557,14 @@ function respawn() {
         document.addEventListener("keypress",function(event){
 
          if (event.keyCode == 52) {
+                          document.querySelector("#overlays").style.display = "none";
            document.getElementById("leaveBtn").click();
            document.querySelector(".swal-button--confirm").click();
            document.querySelector(".swal-modal").style.display = "none";
            document.getElementsByClassName("swal-overlay")[0].style.display = "none";
+
           document.querySelector("#play-btn").click();
+             setTimeout(function(){document.querySelector("#overlays").style.display = "";}, 1000);
 
 
             }
@@ -536,7 +575,8 @@ function respawn() {
             }
 
 
-             if (event.keyCode == 49) { // number 1
+                if (document.querySelector("button#emojiBindings.on")){
+                    if (event.keyCode == 49) { // number 1
                  document.querySelectorAll(".card")[0].firstChild.click();
                // placeEmojis(80, 495);
                 //document.getElementById("emojiBtn").click();
@@ -574,7 +614,7 @@ function respawn() {
             if (event.keyCode == 100){ // letter d
                     document.querySelectorAll(".card")[6].firstChild.click();
             }
-          
+
 
             if(event.keyCode == 122) { // letter z
                     document.querySelectorAll(".card")[9].firstChild.click();
@@ -619,6 +659,12 @@ function respawn() {
 
              }
 
+                }
+
+
+
+
+             
         });
 
 
