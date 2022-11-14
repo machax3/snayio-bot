@@ -73,9 +73,9 @@ emojiBindingsButton.setAttribute("class", "on");};}}, 1000);
 
 
 
-setInterval(function(){ if (document.querySelector("button#respawnButton.on")){document.querySelector("button#respawnButton.on").onclick = function(){document.querySelector("button#respawnButton.on").style.background = "gray"; respawnValueOn.remove(); document.querySelector("button#respawnButton.on").append(respawnValueOff); document.querySelector("button#respawnButton.on").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "off");} }}, 1000);
+setInterval(function(){ if (document.querySelector("button#respawnButton.on")){document.querySelector("button#respawnButton.on").onclick = function(){document.querySelector("button#respawnButton.on").style.background = "gray"; respawnValueOn.remove(); document.querySelector("button#respawnButton.on").append(respawnValueOff); document.querySelector("button#respawnButton.on").removeAttribute("class"); document.querySelector("button#respawnButton").style.color = "white"; document.querySelector("button#respawnButton").setAttribute("class", "off");} }}, 1000);
 
-setInterval(function(){ if (document.querySelector("button#respawnButton.off")){document.querySelector("button#respawnButton.off").onclick = function(){document.querySelector("button#respawnButton.off").style.background = "#32CD32"; respawnValueOff.remove(); document.querySelector("button#respawnButton.off").append(respawnValueOn); document.querySelector("button#respawnButton.off").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "on");} }}, 1000);
+setInterval(function(){ if (document.querySelector("button#respawnButton.off")){document.querySelector("button#respawnButton.off").onclick = function(){document.querySelector("button#respawnButton.off").style.background = "#32CD32"; document.querySelector("button#respawnButton.off").style.color = "black"; respawnValueOff.remove(); document.querySelector("button#respawnButton.off").append(respawnValueOn); document.querySelector("button#respawnButton.off").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "on");} }}, 1000);
 
 
 
