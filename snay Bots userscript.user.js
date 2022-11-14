@@ -45,6 +45,23 @@ emojiBindingsButton.style.padding = "10px";
 emojiBindingsButton.style.transition = "all 1s ease";
 emojiBindingsOutput.style.transition = "all 2s ease";
 
+var respawnButton = document.createElement("button");
+respawnButton.setAttribute("id", "respawnButton");
+respawnButton.setAttribute("class", "on");
+document.querySelector("#modmenu").append(respawnButton);
+var respawnButtonOutput = document.createElement("output");
+respawnButtonOutput.setAttribute("id", "respawnToggleValue");
+respawnButton.append(respawnButtonOutput);
+var respawnValueOn = document.createTextNode("Instant Respawn: On");
+var respawnValueOff = document.createTextNode("Instant Respawn: Off");
+respawnButton.append(respawnValueOn);
+respawnButton.style.background = "#32CD32";
+respawnButton.style.borderRadius = "25px";
+respawnButton.style.padding = "10px";
+respawnButton.style.transition = "all 1s ease";
+respawnButton.style.transition = "all 2s ease";
+
+
 setInterval(function(){ if (document.querySelector("button#emojiBindings.on")){document.querySelector("button#emojiBindings.on").onclick = function(){emojiBindingsOutput.firstChild.remove(); emojiBindingsOutput.append(emojiValueOff); emojiBindingsButton.style.background = "gray"; emojiBindingsButton.removeAttribute("class"); emojiBindingsOutput.style.color = "white"; emojiBindingsButton.setAttribute("class", "off"); };}}, 1000);
 
 setInterval(function(){if(document.querySelector("button#emojiBindings.off")){document.querySelector("button#emojiBindings.off").onclick = function(){emojiBindingsOutput.firstChild.remove();
@@ -56,7 +73,9 @@ emojiBindingsButton.setAttribute("class", "on");};}}, 1000);
 
 
 
+setInterval(function(){ if (document.querySelector("button#respawnButton.on")){document.querySelector("button#respawnButton.on").onclick = function(){document.querySelector("button#respawnButton.on").style.background = "gray"; respawnValueOn.remove(); document.querySelector("button#respawnButton.on").append(respawnValueOff); document.querySelector("button#respawnButton.on").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "off");} }}, 1000);
 
+setInterval(function(){ if (document.querySelector("button#respawnButton.off")){document.querySelector("button#respawnButton.off").onclick = function(){document.querySelector("button#respawnButton.off").style.background = "#32CD32"; respawnValueOff.remove(); document.querySelector("button#respawnButton.off").append(respawnValueOn); document.querySelector("button#respawnButton.off").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "on");} }}, 1000);
 
 
 
@@ -679,8 +698,9 @@ function respawn() {
 
 setInterval(function () {
 
-  
+  if (document.querySelector("button#respawnButton.on")){
   respawn();
+}
     
 
   }, 400);
