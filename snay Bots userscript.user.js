@@ -707,7 +707,7 @@ setInterval(function () {
         //window.cells.byId ---> and open the options and it will say the coordinates of the player
         // cells.list[0] ---> a big list of all the cells. Do a for loop and do cells.list[i].player
                 // and if it is a player, then put it somewhere to check which one is me.
-
+  settings.directionOnTouch = true;
   loading();
 
 //   placeBots();
