@@ -1,21 +1,21 @@
 // ==UserScript==
 // @name         Shazam's Snay.io script
 // @namespace    https://www.snay.io/
-// @version      2.0
+// @version      0.1
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.snay.io/
 // @require https://code.jquery.com/jquery-3.6.0.min.js
 // @grant        none
-// @updateURL    https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript.user.js
-// @downloadURL  https://github.com/ShazamHax/Snay-bots/blob/main/snay%20Bots%20userscript.user.js
+// @updateURL    https://github.com/ShazamHax/Snay-bots/raw/main/snay%20Bots%20userscript.user.js
+// @downloadURL  https://github.com/ShazamHax/Snay-bots/raw/main/snay%20Bots%20userscript.user.js
 // ==/UserScript==
 
 
 (function() {
     'use strict';
     // Warning! if player = false, the window will reload continuously.
-   
+
 var isbot = false;
 document.querySelector("#game-over").remove();
 window.isbot = isbot;
@@ -444,7 +444,7 @@ function resetSpawn(){
         // cells.list[0] ---> a big list of all the cells. Do a for loop and do cells.list[i].player
                 // and if it is a player, then put it somewhere to check which one is me.
 
-    
+
 
   setInterval(function () {
 //     if (parseInt(document.querySelector(".minimap-node").cx.animVal.value) > parseInt(localStorage.getItem("mainX"))+90 || parseInt(document.querySelector(".minimap-node").cx.animVal.value) < parseInt(localStorage.getItem("mainX"))-90 || parseInt(document.querySelector(".minimap-node").cy.animVal.value) > parseInt(localStorage.getItem("mainY"))+90 || parseInt(document.querySelector(".minimap-node").cy.animVal.value) < parseInt(localStorage.getItem("mainY"))-90 ){
@@ -498,7 +498,7 @@ function SkinChange() {
       //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
       //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.transform = "scale(50%)";
      //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.opacity = "50%";
-      
+
 
 
 
@@ -564,7 +564,7 @@ function respawn() {
     } else {
                 play();
     }
-   
+
    // take this away after done with editing script
 }
 
@@ -683,7 +683,7 @@ function respawn() {
 
 
 
-             
+
         });
 
 
@@ -699,12 +699,16 @@ function respawn() {
 setInterval(function () {
     if (window.isbot == true) {
         signOut();
+    } else {
+        if (window.isbot == false){
+            window.focus();
+        }
     }
 
   if (document.querySelector("button#respawnButton.on")){
   respawn();
 }
-    
+
 
   }, 400);
         //window.cells.byId ---> and open the options and it will say the coordinates of the player
@@ -718,4 +722,6 @@ setInterval(function () {
 
 
 
-})();
+
+
+    })();
