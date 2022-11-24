@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shazam's Snay.io script
 // @namespace    https://www.snay.io/
-// @version      0.1
+// @version      2.0
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.snay.io/
