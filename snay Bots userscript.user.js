@@ -152,6 +152,23 @@ document.querySelector(".botForm").style.position = "absolute";
 document.querySelector(".botForm").style.top = "90%";
 botNameInput.style.borderRadius = "25px";
 botNameSubmit.style.borderRadius = "25px";
+
+
+//var serverThing = document.querySelector(".main-form-bg");
+
+//serverThing.setAttribute("style", "position: absolute; left: -1px; top: 29px; transition: none 0s ease 0s; cursor: move;");
+
+
+//botNameSubmit.style.position = "relative";
+//botNameSubmit.style.left = "58px";
+//botNameSubmit.style.top = "-180px";
+//botNameSubmit.style.willChange = "top, left";
+
+//botNameInput.style.position = "relative";
+//botNameInput.style.left = "95px";
+//botNameInput.style.top = "-179px";
+
+
 botNameInput.setAttribute("placeholder", "Bot's Nickname");
 botNameSubmit.onclick = function() {botNameChange();};
 
