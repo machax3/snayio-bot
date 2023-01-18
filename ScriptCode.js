@@ -1,6 +1,5 @@
   'use strict';
-    // Warning! if player = false, the window will reload continuously.
-
+   
 var isbot = false;
 document.querySelector("#game-over").remove();
 window.isbot = isbot;
