@@ -9,7 +9,7 @@ const node = document.createElement("p");
 //var numBots = checkBots();
 const textnode = document.createTextNode("Shazam's snay.io script.   ");
 const menuTitle = document.querySelector("#title");
-menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
+menuTitle.src = "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/kidney-beans-1296x728-feature.jpg?w=1155&h=1528";
 menuTitle.style.position = "absolute";
 menuTitle.style.top = "-5%";
 
