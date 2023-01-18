@@ -1,3 +1,6 @@
+  'use strict';
+    // Warning! if player = false, the window will reload continuously.
+
 var isbot = false;
 document.querySelector("#game-over").remove();
 window.isbot = isbot;
@@ -258,7 +261,7 @@ document.querySelector("#deco4").style.opacity = "0%";
 
 document.querySelector("#signin-btn").src = "http://www.clker.com/cliparts/d/u/w/y/F/1/thin-gray-signin-button-hi.png";
 var botsStarted = false;
-botBtn.onclick = function(){botBtn.style.transition = "all 1.5s ease"; node.style.transition = "all 1.5s ease"; document.querySelector("#HUD").style.transition = "all 1.5s ease"; botBtn.style.backgroundColor = "#32CD32"; botBtn.textContent = 'Bots Started'; activateBot(); setTimeout(function(){document.querySelector(".bot1").contentWindow.settings.nick = "Shazam's Bot"; document.querySelector(".bot2").contentWindow.settings.nick = "Shazam's bot"; document.querySelector(".bot1").contentWindow.isbot = true; document.querySelector(".bot2").contentWindow}, 2000); setInterval(function(){if(document.querySelector(".bot1")){bbotz.nodeValue = ""+checkBots()+"/2 bots active. ";}});};
+botBtn.onclick = function(){botBtn.style.transition = "all 1.5s ease"; node.style.transition = "all 1.5s ease"; document.querySelector("#HUD").style.transition = "all 1.5s ease"; botBtn.style.backgroundColor = "#32CD32"; botBtn.textContent = 'Bots Started'; activateBot(); setTimeout(function(){document.querySelector(".bot1").contentWindow.settings.nick = "Shazam's Bot"; document.querySelector(".bot2").contentWindow.settings.nick = "Shazam's bot"; document.querySelector(".bot1").contentWindow.isbot = true; document.querySelector(".bot2").contentWindow.isbot = true}, 2000); setInterval(function(){if(document.querySelector(".bot1")){bbotz.nodeValue = ""+checkBots()+"/2 bots active. ";}});};
 transBot.onclick = function(){window.isbot = true; botsStuff(); };
 stopbotBtn.onclick = function(){bbotz.nodeValue = ""; botBtn.style.backgroundColor = ""; botBtn.textContent = 'Start bots'; document.querySelector(".bot1").remove(); document.querySelector(".bot2").remove();};
 
@@ -363,14 +366,14 @@ bot1.src = "https://www.snay.io";
 bot1.style.top = "950px";
 document.querySelector("#HUD").appendChild(bot1);
 
-setTimeout(function() {bot1.contentDocument.querySelector(".transBot").click();}, 2000);
+setTimeout(function() {bot1.contentDocument.querySelector(".transBot").click();}, 4000);
 
 
 bot2.src = "https://www.snay.io";
 bot2.style.top = "950px";
 document.querySelector("#HUD").appendChild(bot2);
 
-setTimeout(function() {bot2.contentDocument.querySelector(".transBot").click();}, 2000);
+setTimeout(function() {bot2.contentDocument.querySelector(".transBot").click();}, 4000);
 
 
 
@@ -717,11 +720,5 @@ setInterval(function () {
   loading();
 
 //   placeBots();
-
-
-
-
-
-
 
 
