@@ -576,18 +576,18 @@ function respawn() {
 
         document.addEventListener("keypress",function(event){
 
-         if (event.keyCode == 52) {
-                          document.querySelector("#overlays").style.display = "none";
-           document.getElementById("leaveBtn").click();
-           document.querySelector(".swal-button--confirm").click();
-           document.querySelector(".swal-modal").style.display = "none";
-           document.getElementsByClassName("swal-overlay")[0].style.display = "none";
+         //if (event.keyCode == 52) {
+           //               document.querySelector("#overlays").style.display = "none";
+          // document.getElementById("leaveBtn").click();
+           //document.querySelector(".swal-button--confirm").click();
+           //document.querySelector(".swal-modal").style.display = "none";
+           //document.getElementsByClassName("swal-overlay")[0].style.display = "none";
 
-          document.querySelector("#play-btn").click();
-             setTimeout(function(){document.querySelector("#overlays").style.display = "";}, 1000);
+         // document.querySelector("#play-btn").click();
+           //  setTimeout(function(){document.querySelector("#overlays").style.display = "";}, 1000);
 
 
-            }
+          //  }
 
             if (event.keyCode == 103) { // 'g'
               botSplit();
