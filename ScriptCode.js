@@ -10,6 +10,8 @@ const textnode = document.createTextNode("Shazam's snay.io script.   ");
 const menuTitle = document.querySelector("#title");
 menuTitle.src = "https://i.imgur.com/6pJtFAS.png";
 menuTitle.style.position = "absolute";
+menuTitle.style.height = "50%";
+menuTitle.style.width = "50%";
 menuTitle.style.top = "-5%";
 
 var emojiBindingsButton = document.createElement("button");
