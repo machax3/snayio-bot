@@ -70,7 +70,8 @@ setTimeout(function() {
     const meny = document.querySelector("#overlays.fade-in");
     var bleb = document.createElement("img");
     bleb.style.height = "100%";
-    bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
+    //bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
+     bleb.src = "https://www.chromethemer.com/download/hd-wallpapers/blue-technology-3840x2160.jpg"
     bleb.zIndex = "3";
     meny.appendChild(bleb);
     bleb.style.position = "absolute";
