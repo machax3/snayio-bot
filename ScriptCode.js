@@ -602,7 +602,7 @@ function respawn() {
 
                 if (document.querySelector("button#emojiBindings.on")){
                     if (event.keyCode == 49) { // number 1
-                 document.querySelectorAll(".card")[0].firstChild.click();
+                 //document.querySelectorAll(".card")[0].firstChild.click();
                // placeEmojis(80, 495);
                 //document.getElementById("emojiBtn").click();
                  //emotes[0].firstChild.click();
