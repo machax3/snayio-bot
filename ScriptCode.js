@@ -713,7 +713,10 @@ setInterval(function () {
     }
 
   if (document.querySelector("button#respawnButton.on")){
-  respawn();
+    if (stats.mycells == 0) {
+        respawn();
+}
+
 }
 
 
