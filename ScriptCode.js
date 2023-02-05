@@ -14,13 +14,32 @@ menuTitle.style.height = "50%";
 menuTitle.style.width = "50%";
 menuTitle.style.top = "-5%";
 
+var press4Btn = document.createElement("button");
+press4Btn.setAttribute("id", "press4Btn");
+press4Btn.setAttribute("class", "off");
+document.querySelector("#modmenu").append(press4Btn);
+var press4On;
+var press4Output = document.createElement("output");
+press4Output.setAttribute("id", "press4OutputValue");
+press4Btn.append(press4Output);
+var press4ValueOn = document.createTextNode("4 key respawn: On");
+var press4ValueOff = document.createTextNode("4 key respawn: Off");
+press4Output.append(press4ValueOff);
+press4Output.style.color = "white";
+press4Btn.style.background = "gray";
+press4Btn.style.borderRadius = "25px";
+press4Btn.style.padding = "10px";
+press4Btn.style.transition = "all 1s ease";
+press4Output.style.transition = "all 2s ease";
+
+
 var emojiBindingsButton = document.createElement("button");
 emojiBindingsButton.setAttribute("id", "emojiBindings");
 emojiBindingsButton.setAttribute("class", "on");
 document.querySelector("#modmenu").append(emojiBindingsButton);
 var emojiBindsOn;
 var emojiBindingsOutput = document.createElement("output");
-emojiBindingsOutput.setAttribute("id", "emojiBindingsValue");
+emojiBindingsOutput.setAttribute("id", "press4BtnValue");
 emojiBindingsButton.append(emojiBindingsOutput);
 var emojiValueOn = document.createTextNode("Emoji Keybinds: On");
 var emojiValueOff = document.createTextNode("Emoji Keybinds: Off");
@@ -38,14 +57,17 @@ document.querySelector("#modmenu").append(respawnButton);
 var respawnButtonOutput = document.createElement("output");
 respawnButtonOutput.setAttribute("id", "respawnToggleValue");
 respawnButton.append(respawnButtonOutput);
-var respawnValueOn = document.createTextNode("Instant Respawn: On");
-var respawnValueOff = document.createTextNode("Instant Respawn: Off");
+var respawnValueOn = document.createTextNode("Automatic Respawn: On");
+var respawnValueOff = document.createTextNode("Automatic Respawn: Off");
 respawnButton.append(respawnValueOn);
 respawnButton.style.background = "#32CD32";
 respawnButton.style.borderRadius = "25px";
 respawnButton.style.padding = "10px";
 respawnButton.style.transition = "all 1s ease";
 respawnButton.style.transition = "all 2s ease";
+
+setInterval(function(){if (document.querySelector("button#press4Btn.off")){document.querySelector("button#press4Btn.off").onclick = function(){press4Output.style.color = "black"; press4Btn.style.background = "#32CD32"; press4Btn.removeAttribute("class"); press4Btn.setAttribute("class", "on"); press4Output.firstChild.remove(); press4Output.append(press4ValueOn);};}}, 1000);
+setInterval(function(){if (document.querySelector("button#press4Btn.on")){document.querySelector("button#press4Btn.on").onclick = function(){press4Btn.style.background = "gray"; press4Output.style.color = "white"; press4Btn.removeAttribute("class"); press4Btn.setAttribute("class", "off"); press4Output.firstChild.remove(); press4Output.append(press4ValueOff);};}}, 1000);
 
 
 setInterval(function(){ if (document.querySelector("button#emojiBindings.on")){document.querySelector("button#emojiBindings.on").onclick = function(){emojiBindingsOutput.firstChild.remove(); emojiBindingsOutput.append(emojiValueOff); emojiBindingsButton.style.background = "gray"; emojiBindingsButton.removeAttribute("class"); emojiBindingsOutput.style.color = "white"; emojiBindingsButton.setAttribute("class", "off"); };}}, 1000);
@@ -535,7 +557,7 @@ function respawn() {
 
 
         document.addEventListener("keypress",function(event){
-        if (settings.nick == "𝒮𝔥𝔞𝓏𝔞𝔪") {
+        if (document.querySelector("button#press4Btn.on")) {
          if (event.keyCode == 52) {
                           document.querySelector("#overlays").style.display = "none";
            document.getElementById("leaveBtn").click();
