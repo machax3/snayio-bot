@@ -1,5 +1,5 @@
   'use strict';
-   
+
 var isbot = false;
 document.querySelector("#game-over").remove();
 window.isbot = isbot;
@@ -75,7 +75,7 @@ setTimeout(function() {
   bleb.style.width = "100%";
     //bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
      bleb.src = "https://www.chromethemer.com/download/hd-wallpapers/blue-technology-3840x2160.jpg"
-    
+
     bleb.zIndex = "3";
     meny.appendChild(bleb);
     bleb.style.position = "absolute";
@@ -265,7 +265,7 @@ document.querySelector("#deco4").style.opacity = "0%";
 
 document.querySelector("#signin-btn").src = "http://www.clker.com/cliparts/d/u/w/y/F/1/thin-gray-signin-button-hi.png";
 var botsStarted = false;
-botBtn.onclick = function(){botBtn.style.transition = "all 1.5s ease"; node.style.transition = "all 1.5s ease"; document.querySelector("#HUD").style.transition = "all 1.5s ease"; botBtn.style.backgroundColor = "#32CD32"; botBtn.textContent = 'Bots Started'; activateBot(); setTimeout(function(){document.querySelector(".bot1").contentWindow.settings.nick = "Shazam's Bot"; document.querySelector(".bot2").contentWindow.settings.nick = "Shazam's bot"; document.querySelector(".bot1").contentWindow.isbot = true; document.querySelector(".bot2").contentWindow.isbot = true}, 2000); setInterval(function(){if(document.querySelector(".bot1")){bbotz.nodeValue = ""+checkBots()+"/2 bots active. ";}});};
+botBtn.onclick = function(){botBtn.style.transition = "all 1.5s ease"; node.style.transition = "all 1.5s ease"; document.querySelector("#HUD").style.transition = "all 1.5s ease"; botBtn.style.backgroundColor = "#32CD32"; botBtn.textContent = 'Bots Started'; activateBot(); setTimeout(function(){document.querySelector(".bot1").contentWindow.settings.nick = "Shazam's Bot"; document.querySelector(".bot2").contentWindow.settings.nick = "Shazam's bot"; document.querySelector(".bot1").contentWindow.isbot = true; document.querySelector(".bot2").contentWindow.isbot = true}, 2000); setInterval(function(){if(document.querySelector(".bot1")){setTimeout(function(){if (checkBots() == 0){setTimeout(function(){if(checkBots() == 0){bbotz.nodeValue = "Please close all tabs & windows of browser to restart the bots.";}}, 2500);} else {bbotz.nodeValue = ""+checkBots()+"/2 bots active. ";}}, 4000)}});};
 transBot.onclick = function(){window.isbot = true; botsStuff(); };
 stopbotBtn.onclick = function(){bbotz.nodeValue = ""; botBtn.style.backgroundColor = ""; botBtn.textContent = 'Start bots'; document.querySelector(".bot1").remove(); document.querySelector(".bot2").remove();};
 
@@ -324,17 +324,7 @@ function checkBots() {
     if (botsNo > 2) {
         botsNo = 2;
     }
-    //else {
-     //   if (bbot2 > 0 && bbot1 == 0) {
-      //  botsNo = 1;
-   // } else {
-     //   if (bbot1 > 0 && bbot2 == 0) {
-      //      botsNo = 1;
-       // } else {
-        //    botsNo = 0;
-       // }
 
-    //}
 
     return botsNo;
 }
@@ -492,41 +482,6 @@ function SkinChange() {
 
 
 
-//function placeEmojis(ex, wy) {
-  //  onmousemove = function(e){
-
-
-    //     document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.top = e.clientY-ex + "px";
-      //   document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.left = e.clientX-wy + "px";
-
-        //}
-
-      //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
-      //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.transform = "scale(50%)";
-     //document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.opacity = "50%";
-
-
-
-
-//}
-
-function placeEmojis(mx, my) {
-    onmousemove = function(e){
-
-        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
-        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.top = e.clientY-mx + "px";
-        document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.left = e.clientX-my + "px";
-
-        }
-
-      document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.position = "absolute";
-      document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.transform = "scale(50%)";
-     document.getElementsByClassName("react-horizontal-scrolling-menu--scroll-container")[0].style.opacity = "50%";
-
-
-
-
-}
 
 
 //function placeBots(){
@@ -728,5 +683,4 @@ setInterval(function () {
   loading();
 
 //   placeBots();
-
 
