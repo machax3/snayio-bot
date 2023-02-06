@@ -96,7 +96,7 @@ setTimeout(function() {
     bleb.style.height = "100%";
   bleb.style.width = "100%";
     //bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
-     bleb.src = "https://www.chromethemer.com/download/hd-wallpapers/blue-technology-3840x2160.jpg"
+     bleb.src = "https://imageio.forbes.com/specials-images/imageserve/6050e8386234f79fb73221f7/Blue-and-Purple-technology-background-circuit-board/0x0.jpg?format=jpg&crop=1704,959,x0,y0,safe&width=960"
 
     bleb.zIndex = "3";
     meny.appendChild(bleb);
