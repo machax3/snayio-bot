@@ -85,6 +85,7 @@ setInterval(function(){ if (document.querySelector("button#respawnButton.on")){d
 
 setInterval(function(){ if (document.querySelector("button#respawnButton.off")){document.querySelector("button#respawnButton.off").onclick = function(){document.querySelector("button#respawnButton.off").style.background = "#32CD32"; document.querySelector("button#respawnButton.off").style.color = "black"; respawnValueOff.remove(); document.querySelector("button#respawnButton.off").append(respawnValueOn); document.querySelector("button#respawnButton.off").removeAttribute("class"); document.querySelector("button#respawnButton").setAttribute("class", "on");} }}, 1000);
 
+//document.querySelector("BotBtn").addEventListener("mouseenter"), () => window.settings.directionOnTouch = "true";
 
 
 
@@ -96,8 +97,7 @@ setTimeout(function() {
     bleb.style.height = "100%";
   bleb.style.width = "100%";
     //bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
-     bleb.src = "https://imageio.forbes.com/specials-images/imageserve/6050e8386234f79fb73221f7/Blue-and-Purple-technology-background-circuit-board/0x0.jpg?format=jpg&crop=1704,959,x0,y0,safe&width=960"
-
+     bleb.src = "https://www.chromethemer.com/download/hd-wallpapers/blue-technology-3840x2160.jpg"
 
     bleb.zIndex = "3";
     meny.appendChild(bleb);
@@ -704,6 +704,11 @@ setInterval(function () {
                 // and if it is a player, then put it somewhere to check which one is me.
   settings.directionOnTouch = true;
   loading();
+    function directionON() {
+        window.settings.directionOnTouch = "true";
+
+    }
 
 //   placeBots();
 
+document.querySelector(".BotBtn").addEventListener("mouseenter", directionON);
