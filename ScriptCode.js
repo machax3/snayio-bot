@@ -97,7 +97,7 @@ setTimeout(function() {
     bleb.style.height = "100%";
   bleb.style.width = "100%";
     //bleb.src = "https://wallpapercave.com/wp/wp5756494.jpg";
-     bleb.src = "https://www.chromethemer.com/download/hd-wallpapers/blue-technology-3840x2160.jpg"
+     bleb.src = "https://w0.peakpx.com/wallpaper/116/459/HD-wallpaper-microchip-neon-lines-black-background-chips-technology-backgrounds.jpg"
 
     bleb.zIndex = "3";
     meny.appendChild(bleb);
