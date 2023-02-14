@@ -477,7 +477,7 @@ function resetSpawn(){
 
 
   // }, 1500);
-  }, 50);
+  }, 300);
   }
 
 function updateSkins(){
