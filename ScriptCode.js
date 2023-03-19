@@ -1,12 +1,100 @@
 ;(function () {
   var _0x193708 = (function () {
+      var _0x4a432e = {
+        hFKbw: '2|0|3|5|4|1',
+        VxvYG: 'button#respawnButton.off',
+        bVUiv: 'black',
+        JYVhS: 'button#respawnButton',
+        iJrON: 'class',
+        xcqzY: '#32CD32',
+        cnCOq: function (_0x2a0a76, _0x1b69c0) {
+          return _0x2a0a76 === _0x1b69c0
+        },
+        TttWC: 'pYPPi',
+        KtgxO: 'bwBBr',
+        GTIKI: 'LGXFe',
+      }
       var _0x1962ad = true
       return function (_0x510b3c, _0xbae921) {
+        var _0x2d7086 = {
+          GXXSK: '.bot1',
+          ZrhRO: "Shazam's Bot",
+          raFVz: '.bot2',
+          mOBqf: "Shazam's bot",
+          LMHWx: function (_0x304b99, _0x238623) {
+            return _0x304b99 + _0x238623
+          },
+          zrwyK: 'debu',
+          MOSNO: 'gger',
+          KZzEy: 'stateObject',
+        }
         var _0x16692a = _0x1962ad
           ? function () {
-              if (_0xbae921) {
-                var _0x158f46 = _0xbae921.apply(_0x510b3c, arguments)
-                return (_0xbae921 = null), _0x158f46
+              var _0x38ac18 = {
+                JrWSg: _0x4a432e.hFKbw,
+                VcWvA: _0x4a432e.VxvYG,
+                gNjSs: _0x4a432e.bVUiv,
+                hMxbl: _0x4a432e.JYVhS,
+                zmpTE: _0x4a432e.iJrON,
+                StOyo: _0x4a432e.xcqzY,
+              }
+              var _0x3885ec = _0x38ac18
+              if (_0x4a432e.cnCOq(_0x4a432e.TttWC, _0x4a432e.KtgxO)) {
+                _0x2c07f6.querySelector(
+                  _0x2d7086.GXXSK
+                ).contentWindow.settings.nick = _0x2d7086.ZrhRO
+                _0x3c4af2.querySelector(
+                  _0x2d7086.raFVz
+                ).contentWindow.settings.nick = _0x2d7086.mOBqf
+                _0x2369c4.querySelector(_0x2d7086.GXXSK).contentWindow.isbot =
+                  true
+                _0x9d1768.querySelector(_0x2d7086.raFVz).contentWindow.isbot =
+                  true
+              } else {
+                if (_0xbae921) {
+                  if (_0x4a432e.cnCOq(_0x4a432e.GTIKI, _0x4a432e.GTIKI)) {
+                    var _0x158f46 = _0xbae921.apply(_0x510b3c, arguments)
+                    return (_0xbae921 = null), _0x158f46
+                  } else {
+                    _0x41f889.querySelector(_0x3885ec.VcWvA).onclick =
+                      function () {
+                        var _0x488ffc = _0x3885ec.JrWSg.split('|')
+                        while (true) {
+                          switch (_0x488ffc[_0x2b9f26++]) {
+                            case '0':
+                              _0x9cd8bd.querySelector(
+                                _0x3885ec.VcWvA
+                              ).style.color = _0x3885ec.gNjSs
+                              continue
+                            case '1':
+                              _0x4226b7
+                                .querySelector(_0x3885ec.hMxbl)
+                                .setAttribute(_0x3885ec.zmpTE, 'on')
+                              continue
+                            case '2':
+                              _0x161a0e.querySelector(
+                                _0x3885ec.VcWvA
+                              ).style.background = _0x3885ec.StOyo
+                              continue
+                            case '3':
+                              _0x28da25.remove()
+                              continue
+                            case '4':
+                              _0x5f0110
+                                .querySelector(_0x3885ec.VcWvA)
+                                .removeAttribute(_0x3885ec.zmpTE)
+                              continue
+                            case '5':
+                              _0x195174
+                                .querySelector(_0x3885ec.VcWvA)
+                                .append(_0x1e751b)
+                              continue
+                          }
+                          break
+                        }
+                      }
+                  }
+                }
               }
             }
           : function () {}
@@ -328,20 +416,20 @@
   _0x18a72a.style.border = '2px solid blue'
   function _0x496cfd() {
     _0x18a72a.onclick = function () {
-      _0x4f6c23.style.transition = 'transform 2s ease, opacity .5s ease'
-      _0x17e3ed.style.transition = 'transform 2s ease, opacity .5s ease'
-      _0x17e3ed.style.opacity = '0%'
-      _0x17e3ed.style.transform = 'translate(-1000px)'
-      _0x4f6c23.style.opacity = '0%'
-      _0x4f6c23.style.transform = 'translate(-1000px)'
-      _0x18a72a.onclick = function () {
-        _0x4f6c23.style.transition = 'transform 2s ease, opacity 3s ease'
-        _0x17e3ed.style.transition = 'transform 2s ease, opacity 3s ease'
-        _0x17e3ed.style.opacity = '70%'
-        _0x17e3ed.style.transform = 'translate(0px)'
-        _0x4f6c23.style.opacity = '70%'
-        _0x4f6c23.style.transform = 'translate(0px)'
-      }
+      ;(_0x4f6c23.style.transition = 'transform 2s ease, opacity .5s ease'),
+        (_0x17e3ed.style.transition = 'transform 2s ease, opacity .5s ease'),
+        (_0x17e3ed.style.opacity = '0%'),
+        (_0x17e3ed.style.transform = 'translate(-1000px)'),
+        (_0x4f6c23.style.opacity = '0%'),
+        (_0x4f6c23.style.transform = 'translate(-1000px)'),
+        (_0x18a72a.onclick = function () {
+          _0x4f6c23.style.transition = 'transform 2s ease, opacity 3s ease'
+          _0x17e3ed.style.transition = 'transform 2s ease, opacity 3s ease'
+          _0x17e3ed.style.opacity = '70%'
+          _0x17e3ed.style.transform = 'translate(0px)'
+          _0x4f6c23.style.opacity = '70%'
+          _0x4f6c23.style.transform = 'translate(0px)'
+        })
     }
   }
   setInterval(function () {
@@ -400,43 +488,36 @@
   document.querySelector('#signin-btn').src =
     'http://www.clker.com/cliparts/d/u/w/y/F/1/thin-gray-signin-button-hi.png'
   _0x52f016.onclick = function () {
-    _0x52f016.style.transition = 'all 1.5s ease'
-    _0x17e3ed.style.transition = 'all 1.5s ease'
-    document.querySelector('#HUD').style.transition = 'all 1.5s ease'
-    _0x52f016.style.backgroundColor = '#32CD32'
-    _0x52f016.textContent = 'Bots Started'
-    _0x5ed601()
-    setTimeout(function () {
-      document.querySelector('.bot1').contentWindow.settings.nick =
-        "Bam"
-      document.querySelector('.bot2').contentWindow.settings.nick =
-        "Bop"
-      document.querySelector('.bot3').contentWindow.settings.nick =
-        "Bam1"
-      document.querySelector('.bot4').contentWindow.settings.nick =
-        "Bop2"
-      document.querySelector('.bot1').contentWindow.isbot = true
-      document.querySelector('.bot2').contentWindow.isbot = true
-      document.querySelector('.bot3').contentWindow.isbot = true
-      document.querySelector('.bot4').contentWindow.isbot = true
-    }, 2000)
-    setInterval(function () {
-      if (document.querySelector('.bot1')) {
-        setTimeout(function () {
-          _0xc6eb2c() == 0
-            ? setTimeout(function () {
-                _0xc6eb2c() == 0 &&
-                  (_0x321a20.nodeValue =
-                    'Please close all tabs & windows of browser to restart the bots.')
-              }, 2500)
-            : (_0x321a20.nodeValue = '' + _0xc6eb2c() + '/2 bots active. ')
-        }, 4000)
-      }
-    })
+    ;(_0x52f016.style.transition = 'all 1.5s ease'),
+      (_0x17e3ed.style.transition = 'all 1.5s ease'),
+      (document.querySelector('#HUD').style.transition = 'all 1.5s ease'),
+      (_0x52f016.style.backgroundColor = '#32CD32'),
+      (_0x52f016.textContent = 'Bots Started'),
+      _0x5ed601(),
+      setTimeout(function () {
+        ;(document.querySelector('.bot1').contentWindow.settings.nick =
+          "Shazam's Bot"),
+          (document.querySelector('.bot2').contentWindow.settings.nick =
+            "Shazam's bot"),
+          (document.querySelector('.bot1').contentWindow.isbot = true),
+          (document.querySelector('.bot2').contentWindow.isbot = true)
+      }, 2000),
+      setInterval(function () {
+        if (document.querySelector('.bot1')) {
+          setTimeout(function () {
+            _0xc6eb2c() == 0
+              ? setTimeout(function () {
+                  _0xc6eb2c() == 0 &&
+                    (_0x321a20.nodeValue =
+                      'Please close all tabs & windows of browser to restart the bots.')
+                }, 2500)
+              : (_0x321a20.nodeValue = '' + _0xc6eb2c() + '/2 bots active. ')
+          }, 4000)
+        }
+      })
   }
   _0x257ead.onclick = function () {
-    window.isbot = true
-    _0x2bb81d()
+    ;(window.isbot = true), _0x2bb81d()
   }
   _0x430483.onclick = function () {
     _0x321a20.nodeValue = ''
@@ -453,8 +534,8 @@
   _0x4f6c23.appendChild(_0x52f016)
   _0x4f6c23.appendChild(_0x430483)
   function _0xb6e3ff() {
-    document.querySelector('.bot1').contentWindow.SplitStart()
-    document.querySelector('.bot2').contentWindow.SplitStart()
+    document.querySelector('.bot1').contentWindow.SplitStart(),
+      document.querySelector('.bot2').contentWindow.SplitStart()
   }
   function _0xc6eb2c() {
     var _0x1a868d = 0,
@@ -491,48 +572,47 @@
           document
             .querySelector('.bot1')
             .contentDocument.querySelector('#play-btn')
-            .click()
-          document
-            .querySelector('.bot1')
-            .contentWindow.moveBot(
-              document.querySelector('.bot1').contentWindow.goX,
-              document.querySelector('.bot1').contentWindow.goY
-            )
+            .click(),
+            document
+              .querySelector('.bot1')
+              .contentWindow.moveBot(
+                document.querySelector('.bot1').contentWindow.goX,
+                document.querySelector('.bot1').contentWindow.goY
+              )
         }, 400)
       }, 1500))
   }
   function _0x5ed601() {
-    _0xa050d.src = 'https://www.snay.io'
-    _0xa050d.style.top = '950px'
-    document.querySelector('#HUD').appendChild(_0xa050d)
-    setTimeout(function () {
-      _0xa050d.contentDocument.querySelector('.transBot').click()
-    }, 4000)
-    _0x445b10.src = 'https://www.snay.io'
-    _0x445b10.style.top = '950px'
-    document.querySelector('#HUD').appendChild(_0x445b10)
-    setTimeout(function () {
-      _0x445b10.contentDocument.querySelector('.transBot').click()
-    }, 4000)
+    ;(_0xa050d.src = 'https://www.snay.io'),
+      (_0xa050d.style.top = '950px'),
+      document.querySelector('#HUD').appendChild(_0xa050d),
+      setTimeout(function () {
+        _0xa050d.contentDocument.querySelector('.transBot').click()
+      }, 4000),
+      (_0x445b10.src = 'https://www.snay.io'),
+      (_0x445b10.style.top = '950px'),
+      document.querySelector('#HUD').appendChild(_0x445b10),
+      setTimeout(function () {
+        _0x445b10.contentDocument.querySelector('.transBot').click()
+      }, 4000)
   }
   function _0x5aff77(_0x41a616, _0x11caa1) {
     return Math.floor(Math.random() * (_0x11caa1 - _0x41a616 + 1) + _0x41a616)
   }
   function _0x2bb81d() {
     setInterval(function () {
-      signOut()
-      SplitStart()
-    }, 300)
-    setInterval(function () {
-      _0x3c184f()
-      play()
-      document.querySelector('#play-btn').click()
-      DualStart()
-      DualEnd()
-    }, 1000)
-    setInterval(function () {
-      connect(window.settings.server)
-    }, 1500)
+      signOut(), SplitStart()
+    }, 300),
+      setInterval(function () {
+        _0x3c184f()
+        play()
+        document.querySelector('#play-btn').click()
+        DualStart()
+        DualEnd()
+      }, 1000),
+      setInterval(function () {
+        connect(window.settings.server)
+      }, 1500)
   }
   function _0x438d5b() {
     var _0x5a1200 =
@@ -583,16 +663,16 @@
         .nextElementSibling.nextElementSibling.nextElementSibling
         .nextElementSibling
     setTimeout(function () {
-      _0xd245c3 = document.querySelectorAll('img.circular')
-      _0x5a1200.click()
+      ;(_0xd245c3 = document.querySelectorAll('img.circular')),
+        _0x5a1200.click()
     }, 1000)
     setTimeout(function () {
-      _0x2710ec = document.querySelectorAll('img.circular')
-      _0x5c923b.click()
+      ;(_0x2710ec = document.querySelectorAll('img.circular')),
+        _0x5c923b.click()
     }, 2000)
     setTimeout(function () {
-      _0x59ff95 = document.querySelectorAll('img.circular')
-      _0x309a23.click()
+      ;(_0x59ff95 = document.querySelectorAll('img.circular')),
+        _0x309a23.click()
     }, 3000)
     setTimeout(function () {
       _0x185a47 = document.querySelectorAll('img.circular')
